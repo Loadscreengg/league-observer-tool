@@ -1,6 +1,6 @@
 {
   "name": "league-observer-tool",
-  "version": "6.11.0",
+  "version": "6.11.0-loadscreen",
   "description": "An addition to the league-prod-toolkit for the observer PC",
   "author": {
     "name": "Riot Community Volunteers"
@@ -28,13 +28,13 @@
   },
   "build": {
     "forceCodeSigning": false,
-    "appId": "gg.rcv.league-observer-tool",
-    "productName": "League Observer Tool",
+    "appId": "gg.rcv.league-observer-tool-loadscreen",
+    "productName": "League Observer Tool - Loadscreen Build",
     "copyright": "Copyright © 2023 Riot Community Volunteers",
     "win": {
       "target": "nsis",
       "icon": "assets/icons/icon.ico",
-      "publisherName": "Riot Community Volunteers",
+      "publisherName": "Riot Community Volunteers, modified by Loadscreen",
       "verifyUpdateCodeSignature": false,
       "publish": [
         "github"
@@ -47,8 +47,8 @@
       "installerIcon": "assets/icons/icon.ico",
       "deleteAppDataOnUninstall": true,
       "menuCategory": true,
-      "shortcutName": "League Observer Tool",
-      "artifactName": "League-Observer-Tool-Setup-v${version}.${ext}"
+      "shortcutName": "League Observer Tool - Loadscreen",
+      "artifactName": "League-Observer-Tool-Setup-Loadscreen-v${version}.${ext}"
     },
     "files": [
       "build/**/*",
@@ -63,7 +63,7 @@
     ],
     "fileAssociations": {
       "ext": "rofl",
-      "name": "League Observer Tool"
+      "name": "League Observer Tool - Loadscreen"
     }
   },
   "devDependencies": {
@@ -94,7 +94,7 @@
     "typescript": "^5.3"
   },
   "dependencies": {
-    "@floh22/farsight": "github:floh22/native-farsight-module",
+    "@floh22/farsight": "github:Loadscreengg/native-farsight-module",
     "@nut-tree/nut-js": "^3.1.2",
     "electron-fetch": "^1.9.1",
     "electron-log": "^4.4.8",
